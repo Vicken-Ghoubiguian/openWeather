@@ -1,5 +1,5 @@
 {
-  "name": "openweather",
+  "name": "@wicken/openweather",
   "version": "1.0.0",
   "description": "NPM module written in JavaScript to get, treat and return weather from OpenWeatherMap",
   "main": "openWeather.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Vicken-Ghoubiguian/openWeather.git"
   },
-  "author": "Vicken-Ghoubiguian",
+  "author": "wicken",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Vicken-Ghoubiguian/openWeather/issues"
