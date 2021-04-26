@@ -28,3 +28,5 @@ NPM module written in JavaScript to get, treat and return weather from OpenWeath
 
 <a name="conclusion"></a>
 ## Conclusion
+
+It has been an exciting project, easily usable by anyone in any other project written with NodeJS (therefore in Javascript language) regardless of its size (large or small) and which has broadened my knowledge in Javascript language and in NodeJS development as potentially every other beginner or confirmed developer.
