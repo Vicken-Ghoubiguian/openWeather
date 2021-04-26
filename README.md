@@ -40,8 +40,10 @@ For several locations:
 // import the 'openWeather' module...
 var openWeather = require('openWeather');
 
-//definition and configuration of the wished city and country as hashtable (in this example, we will take the following locations:
+//definition of wished cities and countries as hashtable
 var weatherReferencesHashTable = new Object();
+
+//configuration of the hashtable for the wished cities and countries for the following locations: 
 weatherReferencesHashTable["Paris"] = "FR";
 weatherReferencesHashTable["Osaka"] = "JP";
 weatherReferencesHashTable["Kaesong"] = "KP";
