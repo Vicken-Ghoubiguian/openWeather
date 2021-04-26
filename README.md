@@ -29,9 +29,7 @@ For a single location:
 var openWeather = require('openWeather');
 
 // definition and configuration of the wished city and country as hashtable (in this example, we will take the french capital Paris' weather - the country code of France is 'FR')...
-/*
 
-*/
 var weatherReferencesHashTable = new Object();
 weatherReferencesHashTable["Paris"] = "FR";
 
@@ -42,13 +40,7 @@ For several locations:
 // import the 'openWeather' module...
 var openWeather = require('openWeather');
 
-/* definition and configuration of the wished city and country as hashtable (in this example, we will take the following locations:
-
-)...
-*/
-/*
-
-*/
+//definition and configuration of the wished city and country as hashtable (in this example, we will take the following locations:
 var weatherReferencesHashTable = new Object();
 weatherReferencesHashTable["Paris"] = "FR";
 ```
