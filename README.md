@@ -23,15 +23,34 @@ NPM module written in JavaScript to get, treat and return weather from OpenWeath
 <a name="a_little_example"></a>
 ## A little example
 
+For a single location:
 ```js
 // import the 'openWeather' module...
 var openWeather = require('openWeather');
 
-// definition and configuration of the wished city and country as hashtable (in this example, we will take the french capital Paris' weather)...
+// definition and configuration of the wished city and country as hashtable (in this example, we will take the french capital Paris' weather - the country code of France is 'FR')...
+/*
+
+*/
 var weatherReferencesHashTable = new Object();
 weatherReferencesHashTable["Paris"] = "FR";
 
 //
+```
+For several locations:
+```js
+// import the 'openWeather' module...
+var openWeather = require('openWeather');
+
+/* definition and configuration of the wished city and country as hashtable (in this example, we will take the following locations:
+
+)...
+*/
+/*
+
+*/
+var weatherReferencesHashTable = new Object();
+weatherReferencesHashTable["Paris"] = "FR";
 ```
 
 <a name="a_useful_links"></a>
