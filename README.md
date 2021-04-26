@@ -43,6 +43,12 @@ var openWeather = require('openWeather');
 //definition and configuration of the wished city and country as hashtable (in this example, we will take the following locations:
 var weatherReferencesHashTable = new Object();
 weatherReferencesHashTable["Paris"] = "FR";
+weatherReferencesHashTable["Osaka"] = "JP";
+weatherReferencesHashTable["Kaesong"] = "KP";
+weatherReferencesHashTable["Seoul"] = "KR";
+weatherReferencesHashTable["Nauru"] = "NR";
+weatherReferencesHashTable["Asmara"] = "ER";
+weatherReferencesHashTable["Havana"] = "CU";
 ```
 
 <a name="a_useful_links"></a>
