@@ -630,10 +630,71 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
     return convertedPressureValue;
 }
 
-// Definition of the 'dateAndTimeFormatConversionFunction' function to convert the 'dateAndTime' dateAndTime value in a current 'currentDateAndTimeFormat' format in the wished 'wishedDateAndTimeFormat' format...
-function dateAndTimeFormatConversionFunction(dateAndTime, wishedDateAndTimeFormat, currentDateAndTimeFormat = "timestamp") {
+// Definition of the 'dateAndTimeFormatConversionFunction' function to convert and return dateAndTime from a timestamp to a wished 'wishedDateAndTimeFormat' format...
+function dateAndTimeFormatConversionFunction(dateAndTime, wishedDateAndTimeFormat = "timestamp") {
 
+    var convertedDateAndTime;
 
+    // If the wished date and time is "timestamp"... 
+    if(wishedDateAndTimeFormat != "timestamp") {
+
+        // Conversion of 'dateAndTime' timestamp as a JS Date object...
+        var dateAndTimeASJSDate = new Date(dateAndTime);
+
+        // If the number of hours is less than 9 or equal to 9, so...
+        if(dateAndTimeASJSDate.getHours() <= 9) {
+
+            // A '0' is added to the final value of hours...
+            hours = "0" + dateAndTimeASJSDate.getHours();
+
+        // Else...
+        } else {
+
+            // The final value of hours is ready...
+            hours = dateAndTimeASJSDate.getHours();
+        }
+
+        // If the number of minutes is less than 9 or equal to 9, so...
+        if(dateAndTimeASJSDate.getMinutes() <= 9) {
+
+            // A '0' is added to the final value of minutes...
+            minutes = "0" + dateAndTimeASJSDate.getMinutes();
+
+        // Else...
+        } else {
+
+            // The final value of minutes is ready...
+            minutes = dateAndTimeASJSDate.getMinutes();
+        }
+
+        // If the number of seconds is less than 9 or equal to 9, so...
+        if(dateAndTimeASJSDate.getSeconds() <= 9) {
+
+            // A '0' is added to the final value of seconds...
+            secondes = "0" + dateAndTimeASJSDate.getSeconds();
+
+        // Else...
+        } else {
+
+            // The final value of seconds is ready...
+            secondes = dateAndTimeASJSDate.getSeconds();
+        }
+
+        // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
+        convertedDateAndTime = dateAndTimeASJSDate.getHours() + ":" + dateAndTimeASJSDate.getMinutes() +  ":" + dateAndTimeASJSDate.getSeconds();
+
+    // Else...
+    } else {
+
+        // Message to tell some things in the console...
+        console.log("\x1b[31m" + "Date and time already in timestamp..." + "\x1b[0m");
+
+        // Affectation of 'dateAndTime' to 'convertedDateAndTime'...
+        convertedDateAndTime = dateAndTime;
+    }
+
+    // Returning the converted date and time (datetime)...
+    return convertedDateAndTime;
 }
 
 // Definition of the 'getUVRisk' function to determine and return the UV risk from the 'uvValue' value...
