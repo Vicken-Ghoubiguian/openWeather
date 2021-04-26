@@ -24,7 +24,10 @@ NPM module written in JavaScript to get, treat and return weather from OpenWeath
 ## A little example
 
 ```js
+// import the 'openWeather' module...
 var openWeather = require('openWeather');
+
+// definition of the wished city and country as hashtable...
 
 ```
 
