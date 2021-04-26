@@ -4,15 +4,15 @@ NPM module written in JavaScript to get, treat and return weather from OpenWeath
 
 ## Contents
 
-    1. [What is this project ?](#what_is_this_project)
+1. [What is this project ?](#what_is_this_project)
 
-    2. [How to use it ?](#how_to_use_it)
+2. [How to use it ?](#how_to_use_it)
 
-    3. [A little example](#a_little_example)
+3. [A little example](#a_little_example)
 
-    4. [A few usefull links](#a_useful_links)
+4. [A few usefull links](#a_useful_links)
 
-    5. [Conclusion](#conclusion)
+5. [Conclusion](#conclusion)
 
 <a name="what_is_this_project"></a>
 ## What is this project ?
