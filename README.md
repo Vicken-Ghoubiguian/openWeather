@@ -23,6 +23,11 @@ NPM module written in JavaScript to get, treat and return weather from OpenWeath
 <a name="a_little_example"></a>
 ## A little example
 
+```js
+var openWeather = require('openWeather');
+
+```
+
 <a name="a_useful_links"></a>
 ## A few usefull links
 
