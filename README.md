@@ -70,7 +70,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Message: " + results[0].message);
         }
     }
-}
+});
 ```
 For several locations:
 ```js
@@ -127,7 +127,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Message: " + results[i].message);
         }
     }
-}
+});
 ```
 
 <a name="a_useful_links"></a>
