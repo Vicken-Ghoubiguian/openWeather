@@ -66,7 +66,8 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
             //
             console.log("==========================================");
-
+            console.log("Code: " + results[0].cod);
+            console.log("Message: " + results[0].message);
         }
     }
 }
@@ -122,7 +123,8 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
             //
             console.log("==========================================");
-
+            console.log("Code: " + results[i].cod);
+            console.log("Message: " + results[i].message);
         }
     }
 }
