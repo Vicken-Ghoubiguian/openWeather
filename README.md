@@ -46,6 +46,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("City (country code): " + results[0].city + " (" + results[0].sys_country + ")");
             console.log("Geographic coordinates: (lat: " + results[0].latitude + ", lon: " + results[0].longitude + ")");
             console.log("Description: " + results[0].weather_description);
+            console.log("Weather icon: " + results[0].weather_icon);
             console.log("Sunrise time (in timestamp): " + results[0].sys_sunrise);
             console.log("Sunset time (in timestamp): " + results[0].sys_sunset);
             console.log("Pressure: " + results[i].main_pressure);
@@ -103,6 +104,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("City (country code): " + results[i].city + " (" + results[i].sys_country + ")");
             console.log("Geographic coordinates: (lat: " + results[i].latitude + ", lon: " + results[i].longitude + ")");
             console.log("Description: " + results[i].weather_description);
+            console.log("Weather icon: " + results[i].weather_icon);
             console.log("Sunrise time (in timestamp): " + results[i].sys_sunrise);
             console.log("Sunset time (in timestamp): " + results[i].sys_sunset);
             console.log("Pressure: " + results[i].main_pressure);
