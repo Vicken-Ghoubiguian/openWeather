@@ -10,7 +10,7 @@ NPM module written in JavaScript to get, treat and return weather from OpenWeath
 
 3. [A little example](#a_little_example)
 
-4. [A few usefull links](#a_useful_links)
+4. [A few usefull links](#a_few_useful_links)
 
 5. [Conclusion](#conclusion)
 
@@ -132,8 +132,14 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 });
 ```
 
-<a name="a_useful_links"></a>
+<a name="a_few_useful_links"></a>
 ## A few usefull links
+
+* [NodeJS official website](https://nodejs.org/en/),
+* [NPM official website](https://www.npmjs.com/),
+* [Creating NodeJS modules](https://docs.npmjs.com/creating-node-js-modules),
+* [How to create your own Node.js module](https://initialcommit.com/blog/nodejs-module),
+* [What is a Module in Node.js ?](https://www.w3schools.com/nodejs/nodejs_modules.asp)
 
 <a name="conclusion"></a>
 ## Conclusion
