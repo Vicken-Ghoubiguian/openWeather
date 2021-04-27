@@ -138,8 +138,8 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 * [NodeJS official website](https://nodejs.org/en/),
 * [NPM official website](https://www.npmjs.com/),
 * [Creating NodeJS modules](https://docs.npmjs.com/creating-node-js-modules),
-* [How to create your own Node.js module](https://initialcommit.com/blog/nodejs-module),
-* [What is a Module in Node.js ?](https://www.w3schools.com/nodejs/nodejs_modules.asp)
+* [OpenWeather](https://openweathermap.org/),
+* [OpenWeather API](https://openweathermap.org/api)
 
 <a name="conclusion"></a>
 ## Conclusion
