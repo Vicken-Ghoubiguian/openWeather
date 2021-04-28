@@ -76,7 +76,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 For several locations:
 ```js
 // import the 'openWeather' module...
-var openWeather = require('./openWeather/openWeather');
+var openWeather = require('openWeather');
 
 //definition of wished cities and countries as hashtable
 var weatherReferencesHashTable = new Object();
