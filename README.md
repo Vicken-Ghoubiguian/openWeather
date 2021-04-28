@@ -47,8 +47,8 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Geographic coordinates: (lat: " + results[0].latitude + ", lon: " + results[0].longitude + ")");
             console.log("Description: " + results[0].weather_description);
             console.log("Weather icon: " + results[0].weather_icon);
-            console.log("Sunrise time (in timestamp): " + results[0].sys_sunrise);
-            console.log("Sunset time (in timestamp): " + results[0].sys_sunset);
+            console.log("Sunrise time: " + openWeather.dateAndTimeFormatConversionFunction(results[0].sys_sunrise, results[0].timezone));
+            console.log("Sunset time: " + openWeather.dateAndTimeFormatConversionFunction(results[0].sys_sunset, results[0].timezone));
             console.log("Pressure: " + results[i].main_pressure);
             console.log("Temperature: " + results[0].main_temp + " Kelvin (K)");
             console.log("Maximum temperature: " + results[0].main_temp_max + " Kelvin (K)");
@@ -76,7 +76,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 For several locations:
 ```js
 // import the 'openWeather' module...
-var openWeather = require('openWeather');
+var openWeather = require('./openWeather/openWeather');
 
 //definition of wished cities and countries as hashtable
 var weatherReferencesHashTable = new Object();
@@ -105,8 +105,8 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Geographic coordinates: (lat: " + results[i].latitude + ", lon: " + results[i].longitude + ")");
             console.log("Description: " + results[i].weather_description);
             console.log("Weather icon: " + results[i].weather_icon);
-            console.log("Sunrise time (in timestamp): " + results[i].sys_sunrise);
-            console.log("Sunset time (in timestamp): " + results[i].sys_sunset);
+            console.log("Sunrise time: " + openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone));
+            console.log("Sunset time: " + openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone));
             console.log("Pressure: " + results[i].main_pressure);
             console.log("Temperature: " + results[i].main_temp + " Kelvin (K)");
             console.log("Maximum temperature: " + results[i].main_temp_max + " Kelvin (K)");
