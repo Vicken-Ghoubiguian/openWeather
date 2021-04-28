@@ -17,6 +17,8 @@ NPM module written in JavaScript to get, treat and return weather from OpenWeath
 <a name="what_is_this_project"></a>
 ## What is this project ?
 
+This project consists to develop an NPM module written in JavaScript to get, treat and return weather from OpenWeatherMap.
+
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
