@@ -33,6 +33,22 @@ This NPM module is composed of 5 functions in total. They are presented right he
 
 Other functions can be added along the way to upgrade this NPM module to new features.
 
+This NPM module is initially made to be used in computer programming and maker courses for the elements defined in the following list:
+
+* introduction to the use and programming of APIs,
+
+* introduction to the use of JSON format,
+
+* initiation to the development of NodeJS modules,
+
+* handling of NodeJS technology and initiation to development in this technology,
+
+* algorithmic initialization and their coding,
+
+* learning good programming practices,
+
+* initiation to web requests and communication protocols.
+
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
