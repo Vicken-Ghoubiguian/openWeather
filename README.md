@@ -31,6 +31,8 @@ This NPM module is composed of 5 functions in total. They are presented right he
 
 * a function internal to the module and making it possible to define the level of risk represented by the value of ultraviolet radiation passed as a parameter between all those defined internationally. This function will then return a string of characters corresponding to the level of ultraviolet risk represented.
 
+Other functions can be added along the way to upgrade this NPM module to new features.
+
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
