@@ -19,6 +19,17 @@ NPM module written in JavaScript to get, treat and return weather datas from Ope
 
 This project consists to develop an NPM module written in JavaScript to get, treat and return weather datas from OpenWeatherMap.
 
+This NPM module is composed of 5 functions in total. They are presented right here:
+
+* a function that returns all meteorological data for all cities with the country code of their respective countries. More specifically, this function will take as parameter an associative array, each element of which represents the identification of a city with the name of the latter as key and the code of the country where it is located as value. This function will then return a simple table containing the meteorological data for each city requested. The returned data will be structured into objects for each of the requested cities. Using the OpenWeather web service API, this function will also take your personal OpenWeather API key as a parameter.
+
+* a function for converting the date and time for sunrise and sunset in various types of internationally recognized and used formats (timestamp - number of seconds elapsed since January 1, 1970 at midnight, DMY - day month year, MDY - month day year and YMD - year month day). This function will therefore take as parameters the date and time in the form of a timestamp, the timezone corresponding to the city in the given country in the form of the number of seconds separating it from UTC (for coordinated universal time - the international reference of time elapsed) and the desired format for the time and date (timestamp for timestamp, DMYHMS for DMY, MDYHMS for MDY and YMDHMS for YMD). This function will then return a character string corresponding to the date and time in the desired format.
+
+* a function of converting the atmospheric pressure between the different units of measurement that exist internationally (HectoPascal - hPa, Pascal - Pa, Bar - bar, Atmosphere - atm, Torr - torr and Pounds per square inch - psi) and taking into account cases where the requested pressure unit is the same as the current one or where the requested pressure unit simply does not exist.
+
+* a function of converting temperatures between the different units of measurement that exist internationally (Celsius - ° C, Fahrenheit - ° F and Kelvin - K) and taking into account the cases where the requested temperature unit is the same as the current one or even where the requested temperature unit simply does not exist.
+
+* a function internal to the module and making it possible to define the level of risk represented by the value of ultraviolet radiation passed as a parameter between all those defined internationally. This function will then return a string of characters corresponding to the level of ultraviolet risk represented.
 
 <a name="how_to_use_it"></a>
 ## How to use it ?
