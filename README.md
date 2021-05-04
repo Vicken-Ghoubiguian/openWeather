@@ -8,7 +8,7 @@ NPM module written in JavaScript to get, treat and return weather datas from Ope
 
 2. [How to use it ?](#how_to_use_it)
 
-3. [A little example](#a_little_example)
+3. [Little examples](#little_examples)
 
 4. [A few usefull links](#a_few_useful_links)
 
@@ -52,8 +52,8 @@ This NPM module is initially made to be used in computer programming and maker c
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
-<a name="a_little_example"></a>
-## A little example
+<a name="little_examples"></a>
+## Little examples
 
 For a single location:
 ```js
