@@ -64,6 +64,9 @@ var openWeather = require('openWeather');
 var weatherReferencesHashTable = new Object();
 weatherReferencesHashTable["Paris"] = "FR";
 
+// definition of the 'openWeatherAPIKey' variable which contain your current Openweather API key...
+var openWeatherAPIKey = "Your OpenWeather API Key";
+
 // Calling the 'getWeather' method from the 'openWeather' module 
 openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
@@ -121,6 +124,9 @@ weatherReferencesHashTable["Seoul"] = "KR";
 weatherReferencesHashTable["Nauru"] = "NR";
 weatherReferencesHashTable["Asmara"] = "ER";
 weatherReferencesHashTable["Havana"] = "CU";
+
+// definition of the 'openWeatherAPIKey' variable which contain your current Openweather API key...
+var openWeatherAPIKey = "Your OpenWeather API Key";
 
 // Calling the 'getWeather' method from the 'openWeather' module 
 openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
