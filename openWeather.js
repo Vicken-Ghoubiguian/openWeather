@@ -756,27 +756,33 @@ function getUVRisk(uvValue) {
 
     var determiedUVRisk = "";
 
+    // if the UV index is less than or equal to 2 then the risk is low, so...
     if (uvValue <= 2) {
 
         determiedUVRisk = "low";
 
+    //
     } else if (3 <= uvValue && uvValue <= 5) {
 
         determiedUVRisk = "moderate";
 
+    //
     } else if (6 <= uvValue && uvValue <= 7) {
 
         determiedUVRisk = "high";
 
+    //
     } else if (8 <= uvValue && uvValue <= 10) {
 
         determiedUVRisk = "very high";
 
+    // else: the UV index is greater than 10, therefore extreme...
     } else {
 
         determiedUVRisk = "extreme";
     }
 
+    // Returning the determined UV risk...
     return determiedUVRisk;
 }
 
