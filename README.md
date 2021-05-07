@@ -52,7 +52,7 @@ This NPM module is initially made to be used in computer programming and maker c
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
-There are many ways to use this NPM module. Bellow is presented the most used ways to integrate it into all the NodeJS projects you want.
+There are many ways to use this NPM module. Bellow is presented the most used ways to integrate it into all the NodeJS projects you want. First start from the beginning, it is similar to all the ways:
 
 <a name="little_examples"></a>
 ## Little examples
