@@ -871,6 +871,7 @@ async function getWeather(citiesAndCountries, apiKey) {
     return weather_data;
 }
 
+// Export all defined functions to get and treat weather datas...
 module.exports = {
 
         'getWeather': getWeather,
