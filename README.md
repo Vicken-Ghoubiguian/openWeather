@@ -64,11 +64,31 @@ There are 3 ways to use this NPM module. Here they are:
 ### From locally...
 
 ```bash
+mkdir test
+```
+
+```bash
+cd test
+```
+
+```bash
+git clone https://github.com/Vicken-Ghoubiguian/openWeather
+```
+
+```bash
 var openWeather = require('./openweather');
 ```
 
 <a name="from_github"></a>
 ### From GitHub...
+
+```bash
+mkdir test
+```
+
+```bash
+cd test
+```
 
 ```bash
 npm install https://github.com/Vicken-Ghoubiguian/openWeather
