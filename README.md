@@ -8,7 +8,9 @@ NPM module written in JavaScript to get, treat and return weather datas from Ope
 
 2. [How to use it ?](#how_to_use_it)
 
-    * [From NPM...](#from_npm),
+    * [From locally...](#from_locally)
+
+    * [From NPM...](#from_npm)
 
     * [From GitHub...](#from_github)
 
@@ -56,13 +58,16 @@ This NPM module is initially made to be used in computer programming and maker c
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
-There are two ways to use this NPM module. Here they are:
+There are 3 ways to use this NPM module. Here they are:
 
-<a name="from_npm"></a>
-### From NPM...
+<a name="from_locally"></a>
+### From locally...
 
 <a name="from_github"></a>
 ### From GitHub...
+
+<a name="from_npm"></a>
+### From NPM...
 
 <a name="little_examples"></a>
 ## Little examples
