@@ -10,9 +10,9 @@ NPM module written in JavaScript to get, treat and return weather datas from Ope
 
     * [From locally...](#from_locally)
 
-    * [From NPM...](#from_npm)
-
     * [From GitHub...](#from_github)
+
+    * [From NPM...](#from_npm)
 
 3. [Little examples](#little_examples)
 
