@@ -70,7 +70,7 @@ There are two ways to use this NPM module. Here they are:
 For a single location:
 ```js
 // import the 'openWeather' module...
-var openWeather = require('openWeather');
+var openWeather = require('@wicken/openweather');
 
 // definition and configuration of the wished city and country as hashtable (in this example, we will take the french capital Paris' weather - the country code of France is 'FR')...
 var weatherReferencesHashTable = new Object();
@@ -123,7 +123,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 For several locations:
 ```js
 // import the 'openWeather' module...
-var openWeather = require('openWeather');
+var openWeather = require('@wicken/openweather');
 
 //definition of wished cities and countries as hashtable
 var weatherReferencesHashTable = new Object();
