@@ -802,7 +802,7 @@ async function getWeather(citiesAndCountries, apiKey) {
         try {
 
             // Establishment and execution of the request thanks to 'axios'...
-            var response_body = await axios(weather_url);
+            var response_body = await axios.post(weather_url);
 
             // Definition of the 'openWeather' structure which contains all the data concerning the current city...
             var openWeather = {
