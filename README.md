@@ -96,6 +96,8 @@ var openWeather = require('@wicken/openweather');
 <a name="little_examples"></a>
 ## Little examples
 
+Below, there are 2 examples, one for each case (for a single location or many of them), to illustrate how to use this module in any NodeJS project.
+
 For a single location:
 ```js
 // import the 'openWeather' module...
