@@ -73,6 +73,9 @@ cd test
 git clone https://github.com/Vicken-Ghoubiguian/openWeather
 ```
 ```bash
+npm install axios
+```
+```js
 var openWeather = require('./openweather');
 ```
 <a name="from_github"></a>
@@ -87,7 +90,7 @@ cd test
 ```bash
 npm install https://github.com/Vicken-Ghoubiguian/openWeather
 ```
-```bash
+```js
 var openWeather = require('@wicken/openweather');
 ```
 <a name="from_npm"></a>
