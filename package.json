@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Vicken-Ghoubiguian/openWeather.git"
   },
   "author": "wicken",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Vicken-Ghoubiguian/openWeather/issues"
   },
