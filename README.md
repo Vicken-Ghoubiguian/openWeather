@@ -116,7 +116,7 @@ var openWeatherAPIKey = "Your OpenWeather API Key";
 // Calling the 'getWeather' method from the 'openWeather' module 
 openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
-    //
+    // Browse the array  returned by the 'getWeather' function and containing all wished results...
     for(i = 0; i < results.length; i++)
     {
         // In the case that the current element is a valable weather structure...
@@ -177,7 +177,7 @@ var openWeatherAPIKey = "Your OpenWeather API Key";
 // Calling the 'getWeather' method from the 'openWeather' module 
 openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
-    //
+    // Browse the array  returned by the 'getWeather' function and containing all wished results...
     for(i = 0; i < results.length; i++)
     {
         // In the case that the current element is a valable weather structure...
