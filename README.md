@@ -119,7 +119,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
         // In the case that the current element is a valable weather structure...
         if(results[0].cod === 200) {
 
-            //
+            // Display all weather datas...
             console.log("==========================================");
             console.log("City (country code): " + results[0].city + " (" + results[0].sys_country + ")");
             console.log("Geographic coordinates: (lat: " + results[0].latitude + ", lon: " + results[0].longitude + ")");
@@ -143,7 +143,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
         // In other cases...
         } else {
 
-            //
+            // Display the error...
             console.log("==========================================");
             console.log("Code: " + results[0].cod);
             console.log("Message: " + results[0].message);
@@ -180,7 +180,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
         // In the case that the current element is a valable weather structure...
         if(results[i].cod === 200) {
 
-            //
+            // Display all weather datas...
             console.log("==========================================");
             console.log("City (country code): " + results[i].city + " (" + results[i].sys_country + ")");
             console.log("Geographic coordinates: (lat: " + results[i].latitude + ", lon: " + results[i].longitude + ")");
@@ -204,7 +204,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
         // In other cases...
         } else {
 
-            //
+            // Display the error...
             console.log("==========================================");
             console.log("Code: " + results[i].cod);
             console.log("Message: " + results[i].message);
