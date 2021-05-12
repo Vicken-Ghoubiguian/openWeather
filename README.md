@@ -75,6 +75,11 @@ git clone https://github.com/Vicken-Ghoubiguian/openWeather
 ```bash
 npm install axios
 ```
+```bash
+touch index.js
+
+nano index.js
+```
 ```js
 var openWeather = require('./openweather');
 ```
@@ -89,6 +94,11 @@ cd test
 ```
 ```bash
 npm install https://github.com/Vicken-Ghoubiguian/openWeather
+```
+```bash
+touch index.js
+
+nano index.js
 ```
 ```js
 var openWeather = require('@wicken/openweather');
