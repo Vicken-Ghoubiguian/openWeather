@@ -67,7 +67,7 @@ First of all, create an empty folder whatever your location in the file system o
 ```bash
 mkdir test
 ```
-<u>Clarification:</u> the empty folder created is named ```test``` and will be the case for the rest of the demonstration, however you can name it whatever you like.
+__Clarification:__ the empty folder created is named ```test``` and will be the case for the rest of the demonstration, however you can name it whatever you like.
    
 ```bash
 cd test
@@ -93,7 +93,7 @@ First of all, create an empty folder whatever your location in the file system o
 ```bash
 mkdir test
 ```
-<u>Clarification:</u> the empty folder created is named ```test``` and will be the case for the rest of the demonstration, however you can name it whatever you like.
+__Clarification:__ the empty folder created is named ```test``` and will be the case for the rest of the demonstration, however you can name it whatever you like.
 
 ```bash
 cd test
