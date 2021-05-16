@@ -73,9 +73,11 @@ Now, go to the newly created directory:
 ```bash
 cd test
 ```
+You have to clone the ```openWeather``` git repos on GitHub:
 ```bash
 git clone https://github.com/Vicken-Ghoubiguian/openWeather
 ```
+It's time to install the NPM module ```axios```:
 ```bash
 npm install axios
 ```
@@ -86,6 +88,7 @@ touch index.js
 nano index.js
 ```
 __Clarification:__ the empty file created is named ```index.js``` and will be the case for the rest of the demonstration, however you can name it whatever you like.
+
 
 ```js
 var openWeather = require('./openweather');
@@ -103,6 +106,7 @@ Now, go to the newly created directory:
 ```bash
 cd test
 ```
+
 ```bash
 npm install https://github.com/Vicken-Ghoubiguian/openWeather
 ```
