@@ -63,6 +63,7 @@ There are 3 ways to use this NPM module. Here they are:
 <a name="from_locally"></a>
 ### From locally...
 
+First of all, create an empty folder whatever your location in the file system of your computer:
 ```bash
 mkdir test
 ```
@@ -86,6 +87,7 @@ var openWeather = require('./openweather');
 <a name="from_github"></a>
 ### From GitHub...
 
+First of all, create an empty folder whatever your location in the file system of your computer:
 ```bash
 mkdir test
 ```
