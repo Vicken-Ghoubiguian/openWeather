@@ -106,7 +106,7 @@ Now, go to the newly created directory:
 ```bash
 cd test
 ```
-
+You have to install the NPM module ```openWeather``` from GitHub via NPM:
 ```bash
 npm install https://github.com/Vicken-Ghoubiguian/openWeather
 ```
