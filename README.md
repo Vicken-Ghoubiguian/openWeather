@@ -79,11 +79,14 @@ git clone https://github.com/Vicken-Ghoubiguian/openWeather
 ```bash
 npm install axios
 ```
+Now it's time to create your JavaScript file and open it to then use the module ```openWeather```. To do so, create a file named ```index.js``` and open it:
 ```bash
 touch index.js
 
 nano index.js
 ```
+__Clarification:__ the empty file created is named ```index.js``` and will be the case for the rest of the demonstration, however you can name it whatever you like.
+
 ```js
 var openWeather = require('./openweather');
 ```
