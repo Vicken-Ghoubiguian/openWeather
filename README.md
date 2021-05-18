@@ -142,7 +142,7 @@ weatherReferencesHashTable["Paris"] = "FR";
 // definition of the 'openWeatherAPIKey' variable which contain your current Openweather API key...
 var openWeatherAPIKey = "Your OpenWeather API Key";
 
-// Calling the 'getWeather' method from the 'openWeather' module 
+// Calling the 'getWeather' method from the 'openWeather' module...
 openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
     // Browse the array  returned by the 'getWeather' function and containing all wished results...
@@ -181,6 +181,11 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Message: " + results[0].message);
         }
     }
+
+// Catching any possible errors...
+}).catch(err => {
+
+    console.log(err);
 });
 ```
 For several locations:
@@ -203,7 +208,7 @@ weatherReferencesHashTable["Havana"] = "CU";
 // definition of the 'openWeatherAPIKey' variable which contain your current Openweather API key...
 var openWeatherAPIKey = "Your OpenWeather API Key";
 
-// Calling the 'getWeather' method from the 'openWeather' module 
+// Calling the 'getWeather' method from the 'openWeather' module...
 openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
     // Browse the array  returned by the 'getWeather' function and containing all wished results...
@@ -242,6 +247,11 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Message: " + results[i].message);
         }
     }
+
+// Catching any possible errors...
+}).catch(err => {
+
+    console.log(err);
 });
 ```
 
