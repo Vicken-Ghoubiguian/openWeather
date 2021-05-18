@@ -861,15 +861,25 @@ async function getWeather(citiesAndCountries, apiKey) {
         // Definition of bloc 'catch' to catch any occured error...
         } catch(weatherProcessError) {
 
-            // Implementation of the 'openWeatherAsJSON' structure which contains all the data concerning the occured error from openWeather...
-            var openWeatherAsJSON = {
+            //
+            if('response.data' in weatherProcessError) {
 
-                cod: weatherProcessError.response.data.cod,
-                message: weatherProcessError.response.data.message,
-            };
+                // Implementation of the 'openWeatherAsJSON' structure which contains all the data concerning the occured error from openWeather...
+                var openWeatherAsJSON = {
 
-            //Push in the array...
-            weather_data.push(openWeatherAsJSON);
+                    cod: weatherProcessError.response.data.cod,
+                    message: weatherProcessError.response.data.message,
+                };
+
+                //Push in the array...
+                weather_data.push(openWeatherAsJSON);
+
+            // In the other case...
+            } else {
+
+                //
+                return weatherProcessError;
+            }
         }
     }
 
