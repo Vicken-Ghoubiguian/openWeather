@@ -861,7 +861,7 @@ async function getWeather(citiesAndCountries, apiKey) {
         // Definition of bloc 'catch' to catch any occured error...
         } catch(weatherProcessError) {
 
-            //
+            // In the case there are a 'data' filed in the 'response' field in the 'weatherProcessError' raised error, so...
             if('response.data' in weatherProcessError) {
 
                 // Implementation of the 'openWeatherAsJSON' structure which contains all the data concerning the occured error from openWeather...
@@ -877,7 +877,7 @@ async function getWeather(citiesAndCountries, apiKey) {
             // In the other case...
             } else {
 
-                //
+                // The 'weatherProcessError' raised error is returned...
                 return weatherProcessError;
             }
         }
