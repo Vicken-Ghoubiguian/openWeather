@@ -804,8 +804,8 @@ async function getWeather(citiesAndCountries, apiKey) {
             // Establishment and execution of the request thanks to 'axios'...
             var response_body = await axios.post(weather_url);
 
-            // Definition of the 'openWeather' variable which contains all the data concerning the current city in the JSON format...
-            var openWeather = {
+            // Definition of the 'openWeatherAsJSON' variable which contains all the data concerning the current city in the JSON format...
+            var openWeatherAsJSON = {
 
                 // All-Weather section...
                 longitude: response_body.data.coord.lon,
@@ -844,19 +844,19 @@ async function getWeather(citiesAndCountries, apiKey) {
             };
 
             // Configuring the URL for using the Openweathermap API to launch the ultraviolet retrieval request for latitude and longitude for the current weather with API key...
-            var ultraviolet_url = "http://api.openweathermap.org/data/2.5/uvi?lat=".concat(openWeather.latitude, "&lon=", openWeather.longitude, "&appid=", apiKey);
+            var ultraviolet_url = "http://api.openweathermap.org/data/2.5/uvi?lat=".concat(openWeatherAsJSON.latitude, "&lon=", openWeatherAsJSON.longitude, "&appid=", apiKey);
 
             // Establishment and execution of the request thanks to 'axios'...
             var response_body = await axios(ultraviolet_url);
 
             // Completion of the current weather with all UV datas...
-            openWeather.uv_date_iso = response_body.data.date_iso;
-            openWeather.uv_date = response_body.data.date;
-            openWeather.uv_value = Math.round(response_body.data.value);
-            openWeather.uv_risk = getUVRisk(Math.round(response_body.data.value));
+            openWeatherAsJSON.uv_date_iso = response_body.data.date_iso;
+            openWeatherAsJSON.uv_date = response_body.data.date;
+            openWeatherAsJSON.uv_value = Math.round(response_body.data.value);
+            openWeatherAsJSON.uv_risk = getUVRisk(Math.round(response_body.data.value));
 
             // Push in the array...
-            weather_data.push(openWeather);
+            weather_data.push(openWeatherAsJSON);
 
         // Definition of bloc 'catch' to catch any occured error...
         } catch(weatherProcessError) {
