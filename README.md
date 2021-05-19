@@ -89,10 +89,12 @@ nano index.js
 ```
 __Clarification:__ the empty file created is named ```index.js``` and will be the case for the rest of the demonstration, however you can name it whatever you like.
 
-
+In the newly created file ```index.js```, it is now time to import the module ```openWeather```. To do this, copy then paste the following line into the file ```index.js```:
 ```js
 var openWeather = require('./openweather');
 ```
+Now it's your turn to have fun. So...Get ready, get set and code.
+
 <a name="from_github"></a>
 ### From GitHub...
 
@@ -118,10 +120,12 @@ nano index.js
 ```
 __Clarification:__ the empty file created is named ```index.js``` and will be the case for the rest of the demonstration, however you can name it whatever you like.
 
-
+In the newly created file ```index.js```, it is now time to import the module ```openWeather```. To do this, copy then paste the following line into the file ```index.js```:
 ```js
 var openWeather = require('@wicken/openweather');
 ```
+Now it's your turn to have fun. So...Get ready, get set and code.
+
 <a name="from_npm"></a>
 ### From NPM...
 
