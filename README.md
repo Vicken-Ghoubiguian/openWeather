@@ -145,6 +145,9 @@ var openWeatherAPIKey = "Your OpenWeather API Key";
 // Calling the 'getWeather' method from the 'openWeather' module...
 openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
+    // Display separator...
+    console.log("==========================================");
+
     // Browse the array  returned by the 'getWeather' function and containing all wished results...
     for(i = 0; i < results.length; i++)
     {
@@ -152,7 +155,6 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
         if(results[0].cod === 200) {
 
             // Display all weather datas...
-            console.log("==========================================");
             console.log("City (country code): " + results[0].city + " (" + results[0].sys_country + ")");
             console.log("Geographic coordinates: (lat: " + results[0].latitude + ", lon: " + results[0].longitude + ")");
             console.log("Description: " + results[0].weather_description);
@@ -171,12 +173,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Humidity: " + results[0].main_humidity + " %");
             console.log("UV index: " + results[0].uv_value);
             console.log("UV risk: " + results[0].uv_risk);
+            console.log("==========================================");
     
         // In other cases...
         } else {
 
             // Display the error...
-            console.log("==========================================");
             console.log("Code: " + results[i].cod);
             console.log("Message: " + results[i].message);
             console.log("Server: " + results[i].server);
@@ -185,13 +187,15 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Method: " + results[i].method);
             console.log("URL: " + results[i].url);
             console.log("Date: " + results[i].date);
+            console.log("==========================================");
         }
     }
 
 // Catching any possible errors...
 }).catch(err => {
 
-    console.log(err);
+    // Display the error...
+    console.error(err);
 });
 ```
 For several locations:
@@ -217,6 +221,9 @@ var openWeatherAPIKey = "Your OpenWeather API Key";
 // Calling the 'getWeather' method from the 'openWeather' module...
 openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
+    // Display separator...
+    console.log("==========================================");
+
     // Browse the array  returned by the 'getWeather' function and containing all wished results...
     for(i = 0; i < results.length; i++)
     {
@@ -224,7 +231,6 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
         if(results[i].cod === 200) {
 
             // Display all weather datas...
-            console.log("==========================================");
             console.log("City (country code): " + results[i].city + " (" + results[i].sys_country + ")");
             console.log("Geographic coordinates: (lat: " + results[i].latitude + ", lon: " + results[i].longitude + ")");
             console.log("Description: " + results[i].weather_description);
@@ -243,12 +249,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Humidity: " + results[i].main_humidity + " %");
             console.log("UV index: " + results[i].uv_value);
             console.log("UV risk: " + results[i].uv_risk);
-    
+            console.log("==========================================");
+
         // In other cases...
         } else {
 
             // Display the error...
-            console.log("==========================================");
             console.log("Code: " + results[i].cod);
             console.log("Message: " + results[i].message);
             console.log("Server: " + results[i].server);
@@ -257,13 +263,15 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Method: " + results[i].method);
             console.log("URL: " + results[i].url);
             console.log("Date: " + results[i].date);
+            console.log("==========================================");
         }
     }
 
 // Catching any possible errors...
 }).catch(err => {
 
-    console.log(err);
+    // Display the error...
+    console.error(err);
 });
 ```
 
