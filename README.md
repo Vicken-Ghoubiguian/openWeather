@@ -177,8 +177,14 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
             // Display the error...
             console.log("==========================================");
-            console.log("Code: " + results[0].cod);
-            console.log("Message: " + results[0].message);
+            console.log("Code: " + results[i].cod);
+            console.log("Message: " + results[i].message);
+            console.log("Serveur: " + results[i].server);
+            console.log("Hôte: " + results[i].host);
+            console.log("Protocole: " + results[i].protocol);
+            console.log("Methode: " + results[i].method);
+            console.log("URL: " + results[i].url);
+            console.log("Date: " + results[i].date);
         }
     }
 
@@ -245,6 +251,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("==========================================");
             console.log("Code: " + results[i].cod);
             console.log("Message: " + results[i].message);
+            console.log("Serveur: " + results[i].server);
+            console.log("Hôte: " + results[i].host);
+            console.log("Protocole: " + results[i].protocol);
+            console.log("Methode: " + results[i].method);
+            console.log("URL: " + results[i].url);
+            console.log("Date: " + results[i].date);
         }
     }
 
