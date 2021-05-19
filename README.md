@@ -179,10 +179,10 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("==========================================");
             console.log("Code: " + results[i].cod);
             console.log("Message: " + results[i].message);
-            console.log("Serveur: " + results[i].server);
-            console.log("Hôte: " + results[i].host);
-            console.log("Protocole: " + results[i].protocol);
-            console.log("Methode: " + results[i].method);
+            console.log("Server: " + results[i].server);
+            console.log("Host: " + results[i].host);
+            console.log("Protocol: " + results[i].protocol);
+            console.log("Method: " + results[i].method);
             console.log("URL: " + results[i].url);
             console.log("Date: " + results[i].date);
         }
@@ -251,10 +251,10 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("==========================================");
             console.log("Code: " + results[i].cod);
             console.log("Message: " + results[i].message);
-            console.log("Serveur: " + results[i].server);
-            console.log("Hôte: " + results[i].host);
-            console.log("Protocole: " + results[i].protocol);
-            console.log("Methode: " + results[i].method);
+            console.log("Server: " + results[i].server);
+            console.log("Host: " + results[i].host);
+            console.log("Protocol: " + results[i].protocol);
+            console.log("Method: " + results[i].method);
             console.log("URL: " + results[i].url);
             console.log("Date: " + results[i].date);
         }
