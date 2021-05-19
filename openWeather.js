@@ -862,7 +862,7 @@ async function getWeather(citiesAndCountries, apiKey) {
         } catch(weatherProcessError) {
 
             //
-            if(weatherProcessError.response && weatherProcessError.response.status === 401) {
+            if(weatherProcessError.response) {
 
                     // Implementation of the 'openWeatherAsJSON' structure which contains all the data concerning the occured error from openWeather...
                     var openWeatherAsJSON = {
