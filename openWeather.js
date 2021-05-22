@@ -1,10 +1,10 @@
-//
+// Importation of NPM module 'axios'...
 var axios = require('axios');
 
 // Definition of the 'temperatureConversionFunction' function to convert the 'temperatureValue' temperature value in a current 'currentTemperatureUnit' unit in the wished 'wishedTemperatureUnit' unit...
 function temperatureConversionFunction(temperatureValue, wishedTemperatureUnit, currentTemperatureUnit = "Kelvin") {
 
-    //
+    // Definition of the 'convertedTemperatureValue' variable to contain the temperature value in all of the process...
     var convertedTemperatureValue;
 
     // 'switch' instruction to treat all cases about 'currentTemperatureUnit' value...
@@ -180,6 +180,7 @@ function temperatureConversionFunction(temperatureValue, wishedTemperatureUnit, 
 // Definition of the 'pressureConversionFunction' function to convert the 'pressureValue' pressure value in a current 'currentPressureUnit' unit in the wished 'wishedPressureUnit' unit...
 function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPressureUnit = "HectoPascal") {
 
+    // Definition of the 'convertedPressureValue' variable to contain the pressure value in all of the process...
     var convertedPressureValue;
 
     // 'switch' instruction to treat all cases about 'currentPressureUnit' value...
@@ -634,6 +635,7 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
 // Definition of the 'dateAndTimeFormatConversionFunction' function to convert and return dateAndTime from a timestamp to a wished 'wishedDateAndTimeFormat' format...
 function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAndTimeFormat = "timestamp") {
 
+    //
     var convertedDateAndTime;
 
     //
