@@ -1,6 +1,6 @@
 # openWeather
 
-NPM module written in JavaScript to get, treat and return weather datas from OpenWeatherMap.
+NPM module written in JavaScript to get, treat and return weather datas from the OpenWeatherMap's API.
 
 ## Contents
 
