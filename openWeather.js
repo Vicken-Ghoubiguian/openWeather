@@ -770,17 +770,17 @@ function getUVRisk(uvValue) {
 
         determiedUVRisk = "low";
 
-    //
+    // if the UV index is beetween 3 and 5 (both included), so...
     } else if (3 <= uvValue && uvValue <= 5) {
 
         determiedUVRisk = "moderate";
 
-    //
+    // if the UV index is beetween 6 and 7 (both included), so...
     } else if (6 <= uvValue && uvValue <= 7) {
 
         determiedUVRisk = "high";
 
-    //
+    // if the UV index is beetween 8 and 10 (both included), so...
     } else if (8 <= uvValue && uvValue <= 10) {
 
         determiedUVRisk = "very high";
