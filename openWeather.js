@@ -635,7 +635,7 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
 // Definition of the 'dateAndTimeFormatConversionFunction' function to convert and return dateAndTime from a timestamp to a wished 'wishedDateAndTimeFormat' format...
 function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAndTimeFormat = "timestamp") {
 
-    //
+    // Declaration of the 'convertedDateAndTime' variable which will contain the date and time (datetime) converted in the wished format...
     var convertedDateAndTime;
 
     //
@@ -756,7 +756,7 @@ function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAn
         convertedDateAndTime = dateAndTime;
     }
 
-    // Returning the converted date and time (datetime)...
+    // Returning the converted date and time (datetime) in the variable 'convertedDateAndTime'...
     return convertedDateAndTime;
 }
 
