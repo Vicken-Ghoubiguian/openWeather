@@ -186,6 +186,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Wind speed: " + results[0].wind_speed);
             console.log("Wind deg: " + results[0].wind_deg);
             console.log("Offset from UTC: " + results[0].timezone  + " seconds");
+            console.log("UTC offset: " + results[0].utc_offset);
             console.log("Humidity: " + results[0].main_humidity + " %");
             console.log("UV index: " + results[0].uv_value);
             console.log("UV risk: " + results[0].uv_risk);
@@ -262,6 +263,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Wind speed: " + results[i].wind_speed);
             console.log("Wind deg: " + results[i].wind_deg);
             console.log("Offset from UTC: " + results[i].timezone  + " seconds");
+            console.log("UTC offset: " + results[i].utc_offset);
             console.log("Humidity: " + results[i].main_humidity + " %");
             console.log("UV index: " + results[i].uv_value);
             console.log("UV risk: " + results[i].uv_risk);
