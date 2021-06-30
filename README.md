@@ -177,7 +177,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Weather icon: " + results[0].weather_icon);
             console.log("Sunrise time: " + openWeather.dateAndTimeFormatConversionFunction(results[0].sys_sunrise, results[0].timezone));
             console.log("Sunset time: " + openWeather.dateAndTimeFormatConversionFunction(results[0].sys_sunset, results[0].timezone));
-            console.log("Pressure: " + results[i].main_pressure);
+            console.log("Pressure: " + results[0].main_pressure + " hectoPascal (hPa)");
             console.log("Temperature: " + results[0].main_temp + " Kelvin (K)");
             console.log("Maximum temperature: " + results[0].main_temp_max + " Kelvin (K)");
             console.log("Minimum temperature: " + results[0].main_temp_min + " Kelvin (K)");
@@ -270,7 +270,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Weather icon: " + results[i].weather_icon);
             console.log("Sunrise time: " + openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone));
             console.log("Sunset time: " + openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone));
-            console.log("Pressure: " + results[i].main_pressure);
+            console.log("Pressure: " + results[i].main_pressure + " hectoPascal (hPa)");
             console.log("Temperature: " + results[i].main_temp + " Kelvin (K)");
             console.log("Maximum temperature: " + results[i].main_temp_max + " Kelvin (K)");
             console.log("Minimum temperature: " + results[i].main_temp_min + " Kelvin (K)");
