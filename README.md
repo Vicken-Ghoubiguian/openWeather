@@ -279,7 +279,23 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Wind speed: " + results[i].wind_speed);
             console.log("Wind deg: " + results[i].wind_deg);
             console.log("Timezone: " + results[i].timezone  + " seconds");
-            console.log("UTC offset: UTC" + results[i].utc_offset);
+
+            // if the UTC offset is a positive number...
+            if(results[i].utc_offset > 0) {
+            
+                console.log("UTC offset: UTC+" + results[i].utc_offset);
+
+            // else if the UTC offset is a negative number...
+            } else if(results[i].utc_offset < 0) {
+
+                console.log("UTC offset: UTC-" + results[i].utc_offset);
+
+            // In other cases (UTC offset is equal to 0)...   
+            } else {
+
+                console.log("UTC offset: UTC±" + results[i].utc_offset);
+            }
+
             console.log("Humidity: " + results[i].main_humidity + " %");
             console.log("UV index: " + results[i].uv_value);
             console.log("UV risk: " + results[i].uv_risk);
