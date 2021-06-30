@@ -177,13 +177,13 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Weather icon: " + results[0].weather_icon);
             console.log("Sunrise time: " + openWeather.dateAndTimeFormatConversionFunction(results[0].sys_sunrise, results[0].timezone));
             console.log("Sunset time: " + openWeather.dateAndTimeFormatConversionFunction(results[0].sys_sunset, results[0].timezone));
-            console.log("Pressure: " + results[0].main_pressure + " hectoPascal (hPa)");
+            console.log("Pressure: " + results[0].main_pressure + " HectoPascal (hPa)");
             console.log("Temperature: " + results[0].main_temp + " Kelvin (K)");
             console.log("Maximum temperature: " + results[0].main_temp_max + " Kelvin (K)");
             console.log("Minimum temperature: " + results[0].main_temp_min + " Kelvin (K)");
             console.log("Feeling like temperature: " + results[0].main_feels_like + " Kelvin (K)");
             console.log("Clouds: " + results[0].clouds_all);
-            console.log("Wind speed: " + results[0].wind_speed);
+            console.log("Wind speed: " + results[0].wind_speed + " Metre per second (m/s)");
             console.log("Wind deg: " + results[0].wind_deg);
             console.log("Timezone: " + results[0].timezone  + " seconds");
 
@@ -270,13 +270,13 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Weather icon: " + results[i].weather_icon);
             console.log("Sunrise time: " + openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone));
             console.log("Sunset time: " + openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone));
-            console.log("Pressure: " + results[i].main_pressure + " hectoPascal (hPa)");
+            console.log("Pressure: " + results[i].main_pressure + " HectoPascal (hPa)");
             console.log("Temperature: " + results[i].main_temp + " Kelvin (K)");
             console.log("Maximum temperature: " + results[i].main_temp_max + " Kelvin (K)");
             console.log("Minimum temperature: " + results[i].main_temp_min + " Kelvin (K)");
             console.log("Feeling like temperature: " + results[i].main_feels_like + " Kelvin (K)");
             console.log("Clouds: " + results[i].clouds_all);
-            console.log("Wind speed: " + results[i].wind_speed);
+            console.log("Wind speed: " + results[i].wind_speed + " Metre per second (m/s)");
             console.log("Wind deg: " + results[i].wind_deg);
             console.log("Timezone: " + results[i].timezone  + " seconds");
 
