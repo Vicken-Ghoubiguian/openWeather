@@ -190,18 +190,36 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             // if the UTC offset is a positive number...
             if(results[0].utc_offset > 0) {
             
-                // Extraction of the calculation of the offset from UTC in hours decimal part...
-                var decimalPart = (results[0].utc_offset+"").split(".")[1];
+                //
+                if(Number.isInteger(results[0].utc_offset)) {
 
-                console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                    console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + "00");
+
+                // In the other hand...
+                } else {
+
+                    // Extraction of the calculation of the offset from UTC in hours decimal part...
+                    var decimalPart = (results[0].utc_offset+"").split(".")[1];
+
+                    console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                }
 
             // else if the UTC offset is a negative number...
             } else if(results[0].utc_offset < 0) {
 
-                // Extraction of the calculation of the offset from UTC in hours decimal part...
-                var decimalPart = (results[0].utc_offset+"").split(".")[1];
+                //
+                if(Number.isInteger(results[0].utc_offset)) {
 
-                console.log("UTC offset: UTC" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                    console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + "00");
+
+                // In the other hand...
+                } else {
+
+                    // Extraction of the calculation of the offset from UTC in hours decimal part...
+                    var decimalPart = (results[0].utc_offset+"").split(".")[1];
+
+                    console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                }
 
             // In other cases (UTC offset is equal to 0)...   
             } else {
@@ -295,18 +313,36 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             // if the UTC offset is a positive number...
             if(results[i].utc_offset > 0) {
 
-                // Extraction of the calculation of the offset from UTC in hours decimal part...
-                var decimalPart = (results[i].utc_offset+"").split(".")[1];
+                //
+                if(Number.isInteger(results[i].utc_offset)) {
 
-                console.log("UTC offset: UTC+" + (results[i].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                    console.log("UTC offset: UTC+" + (results[i].utc_offset+"").split(".")[0] + ":" + "00");
+
+                // In the other hand...
+                } else {
+
+                    // Extraction of the calculation of the offset from UTC in hours decimal part...
+                    var decimalPart = (results[i].utc_offset+"").split(".")[1];
+
+                    console.log("UTC offset: UTC+" + (results[i].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                }
 
             // else if the UTC offset is a negative number...
             } else if(results[i].utc_offset < 0) {
 
-                // Extraction of the calculation of the offset from UTC in hours decimal part...
-                var decimalPart = (results[i].utc_offset+"").split(".")[1];
+                //
+                if(Number.isInteger(results[i].utc_offset)) {
 
-                console.log("UTC offset: UTC" + (results[i].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                    console.log("UTC offset: UTC" + (results[i].utc_offset+"").split(".")[0] + ":" + "00");
+
+                // In the other hand...
+                } else {
+
+                    // Extraction of the calculation of the offset from UTC in hours decimal part...
+                    var decimalPart = (results[i].utc_offset+"").split(".")[1];
+
+                    console.log("UTC offset: UTC" + (results[i].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                }
 
             // In other cases (UTC offset is equal to 0)...   
             } else {
