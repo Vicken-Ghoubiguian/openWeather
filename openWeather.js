@@ -912,5 +912,6 @@ module.exports = {
         'getWeather': getWeather,
         'dateAndTimeFormatConversionFunction': dateAndTimeFormatConversionFunction,
         'pressureConversionFunction': pressureConversionFunction,
+        'windSpeedConversionFunction': windSpeedConversionFunction,
         'temperatureConversionFunction': temperatureConversionFunction
 }
