@@ -190,10 +190,16 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             // if the UTC offset is a positive number...
             if(results[0].utc_offset > 0) {
             
+                //
+                var decimalPart = (results[0].utc_offset+"").split(".")[1];
+
                 console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + (results[0].utc_offset+"").split(".")[1]);
 
             // else if the UTC offset is a negative number...
             } else if(results[0].utc_offset < 0) {
+
+                //
+                var decimalPart = (results[0].utc_offset+"").split(".")[1];
 
                 console.log("UTC offset: UTC" + (results[0].utc_offset+"").split(".")[0] + ":" + (results[0].utc_offset+"").split(".")[1]);
 
@@ -289,10 +295,16 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             // if the UTC offset is a positive number...
             if(results[i].utc_offset > 0) {
 
+                //
+                var decimalPart = (results[i].utc_offset+"").split(".")[1];
+
                 console.log("UTC offset: UTC+" + (results[i].utc_offset+"").split(".")[0] + ":" + (results[i].utc_offset+"").split(".")[1]);
 
             // else if the UTC offset is a negative number...
             } else if(results[i].utc_offset < 0) {
+
+                //
+                var decimalPart = (results[i].utc_offset+"").split(".")[1];
 
                 console.log("UTC offset: UTC" + (results[i].utc_offset+"").split(".")[0] + ":" + (results[i].utc_offset+"").split(".")[1]);
 
