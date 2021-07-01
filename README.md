@@ -247,6 +247,12 @@ weatherReferencesHashTable["Seoul"] = "KR";
 weatherReferencesHashTable["Nauru"] = "NR";
 weatherReferencesHashTable["Asmara"] = "ER";
 weatherReferencesHashTable["Havana"] = "CU";
+weatherReferencesHashTable["Tehran"] = "IR";
+weatherReferencesHashTable["Eucla"] = "AU";
+weatherReferencesHashTable["Bhaktapur"] = "NP";
+weatherReferencesHashTable["Saint John's"] = "CA";
+weatherReferencesHashTable["London"] = "GB";
+
 
 // definition of the 'openWeatherAPIKey' variable which contain your current Openweather API key...
 var openWeatherAPIKey = "Your OpenWeather API Key";
