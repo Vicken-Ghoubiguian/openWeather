@@ -252,7 +252,7 @@ weatherReferencesHashTable["Eucla"] = "AU";
 weatherReferencesHashTable["Bhaktapur"] = "NP";
 weatherReferencesHashTable["Saint John's"] = "CA";
 weatherReferencesHashTable["London"] = "GB";
-
+weatherReferencesHashTable["Niue"] = "NU";
 
 // definition of the 'openWeatherAPIKey' variable which contain your current Openweather API key...
 var openWeatherAPIKey = "Your OpenWeather API Key";
