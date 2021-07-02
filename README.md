@@ -210,7 +210,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                 // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
                 if(Number.isInteger(results[0].utc_offset)) {
 
-                    console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + "00");
+                    console.log("UTC offset: UTC" + (results[0].utc_offset+"").split(".")[0] + ":" + "00");
 
                 // In the other hand (the calculated offset from UTC is a float)...
                 } else {
@@ -218,7 +218,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[0].utc_offset+"").split(".")[1];
 
-                    console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                    console.log("UTC offset: UTC" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
                 }
 
             // In other cases (UTC offset is equal to 0)...   
