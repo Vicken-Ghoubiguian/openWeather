@@ -190,7 +190,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             // if the UTC offset is a positive number...
             if(results[0].utc_offset > 0) {
             
-                //
+                // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
                 if(Number.isInteger(results[0].utc_offset)) {
 
                     console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + "00");
