@@ -193,6 +193,9 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                 // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
                 if(Number.isInteger(results[0].utc_offset)) {
 
+                    // Extraction of the whole part in hours decimal part...
+                    var wholePart = (results[i].utc_offset+"").split(".")[0];
+
                     // In the case where the 'wholePart' value has a value inferior to 10, so...
                     if(wholePart < 10) {
 
@@ -357,6 +360,9 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
                 // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
                 if(Number.isInteger(results[i].utc_offset)) {
+
+                    // Extraction of the whole part in hours decimal part...
+                    var wholePart = (results[i].utc_offset+"").split(".")[0];
 
                     // In the case where the 'wholePart' value has a value inferior to 10, so...
                     if(wholePart < 10) {
