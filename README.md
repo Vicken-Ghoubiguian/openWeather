@@ -201,7 +201,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[0].utc_offset+"").split(".")[1];
 
-                    //
+                    // Conversion of the 'decimalPart' value from string to int...
                     var decimalPart = parseInt(decimalPart);
 
                     console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + ((decimalPart*60)/100));
@@ -221,7 +221,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[0].utc_offset+"").split(".")[1];
 
-                    //
+                    // Conversion of the 'decimalPart' value from string to int...
                     var decimalPart = parseInt(decimalPart);
 
                     console.log("UTC offset: UTC" + (results[0].utc_offset+"").split(".")[0] + ":" + ((decimalPart*60)/100));
@@ -330,7 +330,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[i].utc_offset+"").split(".")[1];
 
-                    //
+                    // Conversion of the 'decimalPart' value from string to int...
                     var decimalPart = parseInt(decimalPart);
 
                     console.log("UTC offset: UTC+" + (results[i].utc_offset+"").split(".")[0] + ":" + ((decimalPart*60)/100));
@@ -350,7 +350,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[i].utc_offset+"").split(".")[1];
 
-                    //
+                    // Conversion of the 'decimalPart' value from string to int...
                     var decimalPart = parseInt(decimalPart);
 
                     console.log("UTC offset: UTC" + (results[i].utc_offset+"").split(".")[0] + ":" + ((decimalPart*60)/100));
