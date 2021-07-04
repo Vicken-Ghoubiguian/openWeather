@@ -198,6 +198,8 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                 // In the other hand...
                 } else {
 
+                    //
+
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[0].utc_offset+"").split(".")[1];
 
@@ -220,6 +222,8 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
                 // In the other hand (the calculated offset from UTC is a float)...
                 } else {
+
+                    //
 
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[0].utc_offset+"").split(".")[1];
@@ -333,6 +337,8 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                 // In the other hand (the calculated offset from UTC is a float)...
                 } else {
 
+                    //
+
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[i].utc_offset+"").split(".")[1];
 
@@ -355,6 +361,8 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
                 // In the other hand...
                 } else {
+
+                    //
 
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[i].utc_offset+"").split(".")[1];
