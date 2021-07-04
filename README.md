@@ -211,10 +211,10 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     var decimalPart = (results[0].utc_offset+"").split(".")[1];
 
                     // Conversion of the 'decimalPart' value from string to int...
-                    var decimalPart = parseInt(decimalPart);
+                    decimalPart = parseInt(decimalPart);
 
                     // Calculating the number of seconds in current time...
-                    var decimalPart = (decimalPart*60)/100;
+                    decimalPart = (decimalPart*60)/100;
 
                     // In the case where the 'wholePart' value has a value inferior to 10, so...
                     if(wholePart < 10) {
@@ -249,10 +249,10 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     var decimalPart = (results[0].utc_offset+"").split(".")[1];
 
                     // Conversion of the 'decimalPart' value from string to int...
-                    var decimalPart = parseInt(decimalPart);
+                    decimalPart = parseInt(decimalPart);
 
                     // Calculating the number of seconds in current time...
-                    var decimalPart = (decimalPart*60)/100;
+                    decimalPart = (decimalPart*60)/100;
 
                     // In the case where the 'decimalPart' value has a value inferior to 10, so...
                     if(decimalPart < 10) {
@@ -376,10 +376,10 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     var decimalPart = (results[i].utc_offset+"").split(".")[1];
 
                     // Conversion of the 'decimalPart' value from string to int...
-                    var decimalPart = parseInt(decimalPart);
+                    decimalPart = parseInt(decimalPart);
 
                     // Calculating the number of seconds in current time...
-                    var decimalPart = (decimalPart*60)/100;
+                    decimalPart = (decimalPart*60)/100;
 
                     // In the case where the 'wholePart' value has a value inferior to 10, so...
                     if(wholePart < 10) {
@@ -414,10 +414,10 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     var decimalPart = (results[i].utc_offset+"").split(".")[1];
 
                     // Conversion of the 'decimalPart' value from string to int...
-                    var decimalPart = parseInt(decimalPart);
+                    decimalPart = parseInt(decimalPart);
 
                     // Calculating the number of seconds in current time...
-                    var decimalPart = (decimalPart*60)/100;
+                    decimalPart = (decimalPart*60)/100;
 
                     // In the case where the 'decimalPart' value has a value inferior to 10, so...
                     if(decimalPart < 10) {
