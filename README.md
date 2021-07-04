@@ -204,7 +204,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Conversion of the 'decimalPart' value from string to int...
                     var decimalPart = parseInt(decimalPart);
 
-                    //
+                    // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
                     console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
@@ -227,7 +227,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Conversion of the 'decimalPart' value from string to int...
                     var decimalPart = parseInt(decimalPart);
 
-                    //
+                    // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
                     console.log("UTC offset: UTC" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
@@ -339,7 +339,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Conversion of the 'decimalPart' value from string to int...
                     var decimalPart = parseInt(decimalPart);
 
-                    //
+                    // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
                     console.log("UTC offset: UTC+" + (results[i].utc_offset+"").split(".")[0] + ":" + decimalPart);
@@ -362,7 +362,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Conversion of the 'decimalPart' value from string to int...
                     var decimalPart = parseInt(decimalPart);
 
-                    //
+                    // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
                     console.log("UTC offset: UTC" + (results[i].utc_offset+"").split(".")[0] + ":" + decimalPart);
