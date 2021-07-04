@@ -202,7 +202,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                         wholePart = "0" + wholePart;
                     }
 
-                    console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + "00");
+                    console.log("UTC offset: UTC+" + wholePart + ":" + "00");
 
                 // In the other hand...
                 } else {
@@ -370,7 +370,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                         wholePart = "0" + wholePart;
                     }
 
-                    console.log("UTC offset: UTC+" + (results[i].utc_offset+"").split(".")[0] + ":" + "00");
+                    console.log("UTC offset: UTC+" + wholePart + ":" + "00");
 
                 // In the other hand (the calculated offset from UTC is a float)...
                 } else {
