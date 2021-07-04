@@ -363,6 +363,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
+                    //
+                    if(wholePart < 10) {
+
+                        wholePart = "0" + wholePart;
+                    }
+
                     // In the case where the 'decimalPart' value has a value inferior to 10, so...
                     if(decimalPart < 10) {
 
