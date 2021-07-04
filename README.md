@@ -193,6 +193,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                 // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
                 if(Number.isInteger(results[0].utc_offset)) {
 
+                    // In the case where the 'wholePart' value has a value inferior to 10, so...
+                    if(wholePart < 10) {
+
+                        wholePart = "0" + wholePart;
+                    }
+
                     console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + "00");
 
                 // In the other hand...
@@ -209,6 +215,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
+
+                    // In the case where the 'wholePart' value has a value inferior to 10, so...
+                    if(wholePart < 10) {
+
+                        wholePart = "0" + wholePart;
+                    }
 
                     // In the case where the 'decimalPart' value has a value inferior to 10, so...
                     if(decimalPart < 10) {
@@ -383,6 +395,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
                 // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
                 if(Number.isInteger(results[i].utc_offset)) {
+
+                    // In the case where the 'wholePart' value has a value inferior to 10, so...
+                    if(wholePart < 10) {
+
+                        wholePart = "0" + wholePart;
+                    }
 
                     console.log("UTC offset: UTC" + (results[i].utc_offset+"").split(".")[0] + ":" + "00");
 
