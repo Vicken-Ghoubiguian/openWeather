@@ -210,7 +210,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
-                    console.log("UTC offset: UTC+" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                    console.log("UTC offset: UTC+" + wholePart + ":" + decimalPart);
                 }
 
             // else if the UTC offset is a negative number...
@@ -236,7 +236,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
-                    console.log("UTC offset: UTC" + (results[0].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                    console.log("UTC offset: UTC" + wholePart + ":" + decimalPart);
                 }
 
             // In other cases (UTC offset is equal to 0)...   
@@ -351,7 +351,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
-                    console.log("UTC offset: UTC+" + (results[i].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                    console.log("UTC offset: UTC+" + wholePart + ":" + decimalPart);
                 }
 
             // else if the UTC offset is a negative number...
@@ -377,7 +377,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
-                    console.log("UTC offset: UTC" + (results[i].utc_offset+"").split(".")[0] + ":" + decimalPart);
+                    console.log("UTC offset: UTC" + wholePart + ":" + decimalPart);
                 }
 
             // In other cases (UTC offset is equal to 0)...   
