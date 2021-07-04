@@ -210,6 +210,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
+                    //
+                    if(decimalPart < 10) {
+
+                        decimalPart = "0" + decimalPart;
+                    }
+
                     console.log("UTC offset: UTC+" + wholePart + ":" + decimalPart);
                 }
 
@@ -235,6 +241,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
+
+                    //
+                    if(decimalPart < 10) {
+
+                        decimalPart = "0" + decimalPart;
+                    }
 
                     console.log("UTC offset: UTC" + wholePart + ":" + decimalPart);
                 }
@@ -351,6 +363,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
 
+                    //
+                    if(decimalPart < 10) {
+
+                        decimalPart = "0" + decimalPart;
+                    }
+
                     console.log("UTC offset: UTC+" + wholePart + ":" + decimalPart);
                 }
 
@@ -376,6 +394,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
                     // Calculating the number of seconds in current time...
                     var decimalPart = (decimalPart*60)/100;
+
+                    //
+                    if(decimalPart < 10) {
+
+                        decimalPart = "0" + decimalPart;
+                    }
 
                     console.log("UTC offset: UTC" + wholePart + ":" + decimalPart);
                 }
