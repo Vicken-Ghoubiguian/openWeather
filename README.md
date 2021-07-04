@@ -216,6 +216,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Conversion of the 'decimalPart' value from string to int...
                     decimalPart = parseInt(decimalPart);
 
+                    // In the case where the 'decimalPart' value has a value inferior to 10, so...
+                    if(decimalPart < 10) {
+
+                        decimalPart = decimalPart * 10;
+                    }
+
                     // Calculating the number of seconds in current time...
                     decimalPart = (decimalPart*60)/100;
 
@@ -253,6 +259,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
                     // Conversion of the 'decimalPart' value from string to int...
                     decimalPart = parseInt(decimalPart);
+
+                    // In the case where the 'decimalPart' value has a value inferior to 10, so...
+                    if(decimalPart < 10) {
+
+                        decimalPart = decimalPart * 10;
+                    }
 
                     // Calculating the number of seconds in current time...
                     decimalPart = (decimalPart*60)/100;
@@ -384,6 +396,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                     // Conversion of the 'decimalPart' value from string to int...
                     decimalPart = parseInt(decimalPart);
 
+                    // In the case where the 'decimalPart' value has a value inferior to 10, so...
+                    if(decimalPart < 10) {
+
+                        decimalPart = decimalPart * 10;
+                    }
+
                     // Calculating the number of seconds in current time...
                     decimalPart = (decimalPart*60)/100;
 
@@ -421,6 +439,12 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
 
                     // Conversion of the 'decimalPart' value from string to int...
                     decimalPart = parseInt(decimalPart);
+
+                    // In the case where the 'decimalPart' value has a value inferior to 10, so...
+                    if(decimalPart < 10) {
+
+                        decimalPart = decimalPart * 10;
+                    }
 
                     // Calculating the number of seconds in current time...
                     decimalPart = (decimalPart*60)/100;
