@@ -426,7 +426,16 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                 // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
                 if(Number.isInteger(results[i].utc_offset)) {
 
-                    console.log("UTC offset: UTC" + (results[i].utc_offset+"").split(".")[0] + ":" + "00");
+                    // Extraction of the whole part in hours decimal part...
+                    var wholePart = (results[i].utc_offset+"").split(".")[0];
+
+                    // In the case where the 'wholePart' value has a value inferior to 10, so...
+                    if(wholePart < 10) {
+
+                        wholePart = "-0" + Math.abs(wholePart);
+                    }
+
+                    console.log("UTC offset: UTC" + wholePart + ":" + "00");
 
                 // In the other hand...
                 } else {
