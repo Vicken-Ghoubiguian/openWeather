@@ -919,5 +919,6 @@ module.exports = {
         'dateAndTimeFormatConversionFunction': dateAndTimeFormatConversionFunction,
         'pressureConversionFunction': pressureConversionFunction,
         'windSpeedConversionFunction': windSpeedConversionFunction,
-        'temperatureConversionFunction': temperatureConversionFunction
+        'temperatureConversionFunction': temperatureConversionFunction,
+        'utcOffsetDefinitionFunction': utcOffsetDefinitionFunction
 }
