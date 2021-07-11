@@ -188,7 +188,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Timezone: " + results[0].timezone  + " seconds");
 
             // if the UTC offset is a positive number...
-            if(results[0].utc_offset > 0) {
+            /*if(results[0].utc_offset > 0) {
             
                 // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
                 if(Number.isInteger(results[0].utc_offset)) {
@@ -297,7 +297,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             } else {
 
                 console.log("UTC offset: UTC±00:00");
-            }
+            }*/
 
             console.log("Humidity: " + results[0].main_humidity + " %");
             console.log("UV index: " + results[0].uv_value);
@@ -383,7 +383,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             console.log("Timezone: " + results[i].timezone  + " seconds");
 
             // if the UTC offset is a positive number...
-            if(results[i].utc_offset > 0) {
+            /*if(results[i].utc_offset > 0) {
 
                 // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
                 if(Number.isInteger(results[i].utc_offset)) {
@@ -492,7 +492,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
             } else {
 
                 console.log("UTC offset: UTC±00:00");
-            }
+            }*/
 
             console.log("Humidity: " + results[i].main_humidity + " %");
             console.log("UV index: " + results[i].uv_value);
