@@ -194,7 +194,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                 if(Number.isInteger(results[0].utc_offset)) {
 
                     // Extraction of the whole part in hours decimal part...
-                    var wholePart = (results[i].utc_offset+"").split(".")[0];
+                    var wholePart = (results[0].utc_offset+"").split(".")[0];
 
                     // In the case where the 'wholePart' value has a value inferior to 10, so...
                     if(wholePart < 10) {
@@ -208,7 +208,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                 } else {
 
                     // Extraction of the whole part in hours decimal part...
-                    var wholePart = (results[i].utc_offset+"").split(".")[0];
+                    var wholePart = (results[0].utc_offset+"").split(".")[0];
 
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[0].utc_offset+"").split(".")[1];
@@ -247,7 +247,7 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                 if(Number.isInteger(results[0].utc_offset)) {
 
                     // Extraction of the whole part in hours decimal part...
-                    var wholePart = (results[i].utc_offset+"").split(".")[0];
+                    var wholePart = (results[0].utc_offset+"").split(".")[0];
 
                     // In the case where the 'wholePart' value has a value superior to -10, so...
                     if(wholePart > -10) {
@@ -255,13 +255,13 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
                         wholePart = "-0" + Math.abs(wholePart);
                     }
 
-                    console.log("UTC offset: UTC" + (wholePart + ":" + "00");
+                    console.log("UTC offset: UTC" + wholePart + ":" + "00");
 
                 // In the other hand (the calculated offset from UTC is a float)...
                 } else {
 
                     // Extraction of the whole part in hours decimal part...
-                    var wholePart = (results[i].utc_offset+"").split(".")[0];
+                    var wholePart = (results[0].utc_offset+"").split(".")[0];
 
                     // Extraction of the calculation of the offset from UTC in hours decimal part...
                     var decimalPart = (results[0].utc_offset+"").split(".")[1];
@@ -308,14 +308,14 @@ openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(funct
         } else {
 
             // Display the error...
-            console.log("Code: " + results[i].cod);
-            console.log("Message: " + results[i].message);
-            console.log("Server: " + results[i].server);
-            console.log("Host: " + results[i].host);
-            console.log("Protocol: " + results[i].protocol);
-            console.log("Method: " + results[i].method);
-            console.log("URL: " + results[i].url);
-            console.log("Date: " + results[i].date);
+            console.log("Code: " + results[0].cod);
+            console.log("Message: " + results[0].message);
+            console.log("Server: " + results[0].server);
+            console.log("Host: " + results[0].host);
+            console.log("Protocol: " + results[0].protocol);
+            console.log("Method: " + results[0].method);
+            console.log("URL: " + results[0].url);
+            console.log("Date: " + results[0].date);
             console.log("==========================================");
         }
     }
