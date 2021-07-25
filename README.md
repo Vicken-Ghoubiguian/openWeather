@@ -4,9 +4,11 @@ NPM module written in JavaScript to get, treat and return weather datas from the
 
 ## Contents
 
-1. [What is this project ?](#what_is_this_project) 
+1. [What is this project ?](#what_is_this_project)
 
-2. [How to use it ?](#how_to_use_it)
+2. [How is an NPM module structured?]()
+
+3. [How to use it ?](#how_to_use_it)
 
     * [From locally...](#from_locally)
 
@@ -14,11 +16,11 @@ NPM module written in JavaScript to get, treat and return weather datas from the
 
     * [From NPM...](#from_npm)
 
-3. [2 examples](#two_examples)
+4. [2 examples](#two_examples)
 
-4. [A few usefull links](#a_few_useful_links)
+5. [A few usefull links](#a_few_useful_links)
 
-5. [Conclusion](#conclusion)
+6. [Conclusion](#conclusion)
 
 <a name="what_is_this_project"></a>
 ## What is this project ?
