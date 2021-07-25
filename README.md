@@ -62,7 +62,7 @@ This NPM module is initially made to be used in computer programming and maker c
 <a name="how_is_structured_an_npm_module"></a>
 ## How is an NPM module structured ?
 
-This project consists of developing an NPM module written in JavaScript to get, treat and return weather data from the OpenWeatherMap's API.
+This project consists of developing an NPM module written in JavaScript to get, treat and return weather data from the OpenWeatherMap's API. And it is structured as follows:
 
 <a name="how_to_use_it"></a>
 ## How to use it ?
