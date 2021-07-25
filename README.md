@@ -6,7 +6,7 @@ NPM module written in JavaScript to get, treat and return weather datas from the
 
 1. [What is this project ?](#what_is_this_project)
 
-2. [How is an NPM module structured?]()
+2. [How is an NPM module structured?](#how_is_structured_an_npm_module)
 
 3. [How to use it ?](#how_to_use_it)
 
@@ -59,6 +59,7 @@ This NPM module is initially made to be used in computer programming and maker c
 
 * initiation to web requests and communication protocols.
 
+<a name="how_is_structured_an_npm_module"></a>
 ## How is an NPM module structured?
 
 <a name="how_to_use_it"></a>
