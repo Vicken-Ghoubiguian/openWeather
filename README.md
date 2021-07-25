@@ -14,7 +14,7 @@ NPM module written in JavaScript to get, treat and return weather datas from the
 
     * [From NPM...](#from_npm)
 
-3. [Little examples](#little_examples)
+3. [2 examples](#two_examples)
 
 4. [A few usefull links](#a_few_useful_links)
 
@@ -143,7 +143,7 @@ cd test
 ```
 Coming soon...
 
-<a name="little_examples"></a>
+<a name="two_examples"></a>
 ## 2 examples
 
 Below, there are 2 examples, one for each case (for a single location or many of them), to illustrate how to use this module in any NodeJS project.
