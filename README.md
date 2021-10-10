@@ -59,6 +59,8 @@ This NPM module is initially made to be used in computer programming and maker c
 
 * initiation to web requests and communication protocols.
 
+Moreover, this NPM module was developed to be used in online courses on web APIs at IMERIR. The development project of these courses on web APIs at IMERIR is available [just here](https://drive.google.com/drive/folders/1Nh4dJBdg9SIK2r5x4EAXutfiqcqyoLm8).
+
 <a name="how_is_structured_an_npm_module"></a>
 ## How is an NPM module structured ?
 
