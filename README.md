@@ -1,6 +1,6 @@
 # openWeather
 
-NPM module written in JavaScript to get, treat and return weather datas from the OpenWeatherMap's API.
+NPM module written in JavaScript to get, treat and return weather datas from the OpenWeatherMap's API. Moreover, this NPM module was developed to be used in online courses on web APIs at IMERIR. The development project of these courses on web APIs at IMERIR is available [just here](https://drive.google.com/drive/folders/1Nh4dJBdg9SIK2r5x4EAXutfiqcqyoLm8).
 
 ## Contents
 
